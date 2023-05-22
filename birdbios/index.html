@@ -4,6 +4,40 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- TO ADD A NEW BIRD:
+In the first section, CSS, do nothing
+
+In the second section, html, go to the bottom of the main content section. Above the final clearfix, paste in:
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="IMAGE LINK">
+      <img src="IMAGE LINK" alt="BIRD NAME" width="500" height="500">
+    </a>
+    <div class="desc">
+    <h2>BIRD NAME</h2>
+    <h4>YEAR</h4>
+    <button class="popup" onclick="myFunctionQ()">Bird bio
+  		<span class="popuptext" id="myPopupQ">WRITE IN BIRD BIO</span>
+	</button>
+    </div>
+  </div>
+</div>
+
+Paste in the IMAGE LINK where indicated (twice). Put in the BIRD NAME twice. Put in the YEAR once.
+If adding bird bio: for each Q (two), fill in the bird number instead. Also WRITE IN BIRD BIO where indicated.
+
+In the third section, Java, if you're adding a bird bio, paste in this code:
+
+function myFunctionQ() {
+  var popup = document.getElementById("myPopupQ");
+  popup.classList.toggle("show");
+}
+
+For each Q (two), fill in the bird number instead.
+
+FINISHED ADDING NEW BIRD -->
+
 <style>
 * {
   box-sizing: border-box;
@@ -65,11 +99,11 @@ li a:hover:not(.active) {
   color: black;
 }
 
-
 /* 	---------------------------------------------BEGIN MAIN CONTENT   */
 div.gallery img {
   width: 100%;
   height: auto;
+
 }
 
 div.desc {
@@ -91,7 +125,6 @@ div.desc {
   .responsive {
     width: 100%;
     margin: 6px 0;
-
   }
 }
 
@@ -101,7 +134,7 @@ div.desc {
   clear: both; 
 }
 
-/* fix the issue where caption spaced away from image 
+/* fix the issue where caption spaced away from image */
 h2 {
     margin-top: 0;
     margin-bottom: 2px;
@@ -111,7 +144,34 @@ h4 {
     margin-top: 0;
     margin-bottom: 2px;
 }
-*/
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+}
 
 /*   ------------------------------------------------END MAIN CONTENT   */
 
@@ -166,9 +226,32 @@ h4 {
       <img src="IMAGE LINK" alt="BIRD NAME" width="500" height="500">
     </a>
     <div class="desc">
-    <h2>BIRD NAME YEAR</h2>
-    <button class="link">Bird bio</button>
-    <button class="link">Progress pics (new page)</button>
+    <h2>BIRD NAME</h2>
+    <h4>YEAR</h4>
+    <!-- popup -->
+    <button class="popup" onclick="myFunction1()">Bird bio
+  		<span class="popuptext" id="myPopup1">This is a short bio about this bird.</span>
+	</button>
+    <button class="link">Progress pics</button>
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="IMAGE LINK">
+      <img src="IMAGE LINK" alt="BIRD NAME" width="500" height="500">
+    </a>
+    <div class="desc">
+    <h2>BIRD NAME</h2>
+    <h4>YEAR</h4>
+    <!-- popup -->
+    <button class="popup" onclick="myFunction2()">Bird bio2
+  		<span class="popuptext" id="myPopup2">This is a short bio about this NEW bird.</span>
+	</button>
+    <button class="popup" onclick="myFunctionPPSecretary()">Progress pics
+  		<span class="popuptext" id="myPopupPPSecretary">Here are my progress images</span>
+	</button>
     </div>
   </div>
 </div>
@@ -180,6 +263,25 @@ h4 {
 <div class="footer">
   <h2>Website created 2023. Contact thebrowningbirds@gmail.com if the images aren't loading correctly or if anything breaks.</h2>
 </div>
+
+<!-- Java to make the popup work -->
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+
+function myFunctionPPSecretary() {
+  var popup = document.getElementById("myPopupPPSecretary");
+  popup.classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
