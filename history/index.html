@@ -1,1 +1,159 @@
-<h1>Making a history page...</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Times New Roman;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background-image: url("https://i.imgur.com/IpxCGAn.png");
+  background-size: cover;
+  color: black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Create navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e7d026;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #cfa013;
+}
+
+.active {
+    background-color: #96a2b3;
+    font-weight: 900;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  background-color: #e8e8e5;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #96a2b3;
+  font-size: 10px;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* change the header highlight to half opacity */
+.highlighted {
+	background-color: rgba(232,232,229,.7);
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span class="highlighted">The Browning Birds</span></h1>
+  <p><span class="highlighted">at Scripps College</span></p>
+</div>
+
+<!-- navigation bar -->
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a class="active" href="history">History</a></li>
+  <li><a href="birdbios">Bird Bios</a></li>
+  <li><a href="gallery">Gallery</a></li>
+  <li><a href="submit">Submit Birds</a></li>
+
+</ul>
+
+<div class="row">
+  <div class="main">
+    <h2>History</h2>
+    <p>Browning Hall was built in 1929. Then who knows what happened to it for the next 90 years. We showed up in 2019.</p>
+    <div class="fakeimg" style="height:200px;">Old picture of Browning from the library site</div>
+    <p>Photograph of Browning Hall with the tower visible taken between 1929 and 1966, sourced from the Claremont Colleges Library.</p>
+    <p>History of painting idea--talk to Jojo?</p>
+    <p>A group of Scripps students got together late in the evening on April 17, 2022, to add the first six birds: The Quetzal, Hoatzin, Acorn Woodpecker, Mallard Duck, Puffin, and Swallow-Tailed Bee Eater.</p>
+    <div class="fakeimg" style="height:200px;">Picture of us working on the first birds</div>
+    <p>And at the bottom of the east window next to the staircase, we wrote "Add Your Own Bird".
+    <div class="fakeimg" style="height:200px;">Original Add your own bird message</div>
+    <p>When we came back in August 2022, the Red-Winged Blackbird, lesbian Albatrosses, and small red chicken (?) had been added. (Do you know who painted these next additions? Email me about it at thebrowningbirds@gmail.com !!)
+    <div class="fakeimg" style="height:200px;">Picture of the lesbian albatrosses</div>
+    <p>Sometime in late 2022/early 2023, somebody added the Bird Tower Poem. (Do you know who wrote/painted the poem? Email me about it at thebrowningbirds@gmail.com !!)
+    <div class="fakeimg" style="height:200px;">Picture of the poem</div>
+    <p>During this time, people started talking about the Bird Tower around campus. A few people asked me if I had seen the Bird Tower at Scripps. When a friend of mine planned a party up in the tower, somebody from Harvey Mudd asked if the Browning Tower was the same as the Bird Tower (it is). People made plans to add their own bird before graduation.</p>
+    <p>The Bird Tower also infiltrated whiteboards around Scripps dorms.</p>
+    <div class="fakeimg" style="height:200px;">Pictures of the dorm whiteboards with birds drawn</div>
+    <p>As of May 2023, the Bird Tower has 49 birds and tons of doodles and other pieces!! Thank you to everyone who painted a piece of Scripps history, and wishing the best to everyone who will. (Remember to clean off the wall before you paint, and bring music and snacks!!)
+    
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Website created 2023. Contact thebrowningbirds@gmail.com if the images aren't loading correctly or if anything breaks.</h2>
+</div>
+
+</body>
+</html>
