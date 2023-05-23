@@ -222,35 +222,78 @@ h4 {
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="IMAGE LINK">
-      <img src="IMAGE LINK" alt="BIRD NAME" width="500" height="500">
+    <a target="_blank" href="https://i.imgur.com/wozFLNN.jpg">
+      <img src="https://i.imgur.com/wozFLNN.jpg" alt="Quetzal" width="500" height="500">
     </a>
     <div class="desc">
-    <h2>BIRD NAME</h2>
-    <h4>YEAR</h4>
-    <!-- popup -->
-    <button class="popup" onclick="myFunction1()">Bird bio
-  		<span class="popuptext" id="myPopup1">This is a short bio about this bird.</span>
+    <h2>Quetzal</h2>
+    <h4>April 2022</h4>
+    <button class="popup" onclick="myFunctionQuetzal()">Bird bio
+  		<span class="popuptext" id="myPopupQuetzal">WRITE IN BIRD BIO</span>
 	</button>
-    <button class="link">Progress pics</button>
     </div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="IMAGE LINK">
-      <img src="IMAGE LINK" alt="BIRD NAME" width="500" height="500">
+    <a target="_blank" href="https://i.imgur.com/holLUXB.jpg">
+      <img src="https://i.imgur.com/holLUXB.jpg" alt="Hoatzin" width="500" height="500">
     </a>
     <div class="desc">
-    <h2>BIRD NAME</h2>
-    <h4>YEAR</h4>
+    <h2>Hoatzin</h2>
+    <h4>April 2022</h4>
     <!-- popup -->
-    <button class="popup" onclick="myFunction2()">Bird bio2
-  		<span class="popuptext" id="myPopup2">This is a short bio about this NEW bird.</span>
+    <button class="popup" onclick="myFunctionHoatzin()">Bird bio
+  		<span class="popuptext" id="myPopupHoatzin">The hoatzin is next to the quetzal on the wall because they're both from South America! It's painted a bit larger than life-size. The hoatzin is the one big bird visible from the bottom of the stairs.</span>
 	</button>
-    <button class="popup" onclick="myFunctionPPSecretary()">Progress pics
-  		<span class="popuptext" id="myPopupPPSecretary">Here are my progress images</span>
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://i.imgur.com/65gmgMS.jpg">
+      <img src="https://i.imgur.com/65gmgMS.jpg" alt="Acorn Woodpecker" width="500" height="500">
+    </a>
+    <div class="desc">
+    <h2>Acorn Woodpecker</h2>
+    <h4>April 2022</h4>
+    <!-- popup -->
+    <button class="popup" onclick="myFunctionAcorn()">Bird bio
+  		<span class="popuptext" id="myPopupAcorn">WRITE IN BIRD BIO</span>
+	</button>
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://i.imgur.com/ISfArFV.jpg">
+      <img src="https://i.imgur.com/ISfArFV.jpg" alt="Puffin" width="500" height="500">
+    </a>
+    <div class="desc">
+    <h2>Puffin</h2>
+    <h4>April 2022</h4>
+    <button class="popup" onclick="myFunctionPuffin()">Bird bio
+  		<span class="popuptext" id="myPopupPuffin">WRITE IN BIRD BIO</span>
+	</button>
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://i.imgur.com/aHfqSrq.jpg">
+      <img src="https://i.imgur.com/aHfqSrq.jpg" alt="Swallow-Tailed Bee Eater" width="500" height="500">
+    </a>
+    <div class="desc">
+    <h2>Swallow-Tailed Bee Eater</h2>
+    <h4>April 2022</h4>
+    <button class="popup" onclick="myFunctionSwallow()">Bird bio
+  		<span class="popuptext" id="myPopupSwallow">WRITE IN BIRD BIO</span>
 	</button>
     </div>
   </div>
@@ -267,18 +310,28 @@ h4 {
 <!-- Java to make the popup work -->
 <script>
 // When the user clicks on <div>, open the popup
-function myFunction1() {
-  var popup = document.getElementById("myPopup1");
+function myFunctionQuetzal() {
+  var popup = document.getElementById("myPopupQuetzal");
   popup.classList.toggle("show");
 }
 
-function myFunction2() {
-  var popup = document.getElementById("myPopup2");
+function myFunctionHoatzin() {
+  var popup = document.getElementById("myPopupHoatzin");
   popup.classList.toggle("show");
 }
 
-function myFunctionPPSecretary() {
-  var popup = document.getElementById("myPopupPPSecretary");
+function myFunctionAcorn() {
+  var popup = document.getElementById("myPopupAcorn");
+  popup.classList.toggle("show");
+}
+
+function myFunctionPuffin() {
+  var popup = document.getElementById("myPopupPuffin");
+  popup.classList.toggle("show");
+}
+
+function myFunctionSwallow() {
+  var popup = document.getElementById("myPopupSwallow");
   popup.classList.toggle("show");
 }
 </script>
