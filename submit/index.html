@@ -187,27 +187,35 @@ textarea {
     <h2>Submit Birds</h2>
     <p>Send in photos of birds or other paintings in the Browning Tower, or just tell us about how the Bird Tower is doing! :)</p>
     <p>Make a note in the Text box if you want anything posted on the Bird Bios or Gallery pages, but remember that although this website is unsearchable, it is public, meaning that anyone can see this information.</p>
-    <form class="row g-3" action="https://formsubmit.co/thebrowningbirds@gmail.com" method="POST">
+    <form class="row g-3" action="https://formsubmit.co/aac7cda38083cd0893e9a752a1f65d34" method="POST">
+    	<!-- Honeypot -->
+    	<input type="text" name="_honey" style="display: none;">
+        
+        <!-- Remove Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <input type="hidden" name="_next" value="https://gabicypher.github.io/browningbirds/submit/success">
+        
     	<div class="form-col-6">
         	<label for="firstName" class="form-label"><b>Name</b> (doesn't have to be your real one)<br>*required</label> <br>
-            <input type="text" class="form-control" id="firstName" required>
+            <input type="text" class="form-control" name="Name" id="firstName" required>
             <br>
         </div>
         <div class="form-col-8">
         	<label for="emailInfo" class="form-label"><b>Email</b> (doesn't have to be your Claremont Colleges one)<br>*required</label>
-            <input type="email" class="form-control" id="emailInfo" required>
+            <input type="email" class="form-control" name="Email" id="emailInfo" required>
             <br>
         </div>
         <div class="form-col-12">
         	<label for="comments" class="form-label"><b>Message Text</b> (label anything you want posted on the Bird Bios page "BIRD BIO")</label>
             <br>
-            <textarea class="form-control" id="comments" cols="30" rows="5"></textarea>
+            <textarea class="form-control" name="Message&nbsp;Text" id="comments" cols="30" rows="5"></textarea>
             <br>
             <br>
         </div>
         <div class="form-col-8">
         	<label for="attachment" class="form-label"><b>Attach Images</b> (accepted file types: JPEG and PNG)</label>
-        	<input type="file" name="attachment" accept="image/png, image/jpeg">
+        	<input type="file" name="Attachment" accept="image/png, image/jpeg">
             <br>
         </div>
         <div class="form-col-6">
